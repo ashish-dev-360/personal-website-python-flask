@@ -1,0 +1,35 @@
+{% include "includes/header.html" %}
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">Blog</span>
+                <span class="down">{{blog.title}}</span>
+            </h1>
+            <p class="header-subtitle">By: {{blog.author}}</p>
+
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="{{blog.image}}" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <h2 class="section-title mb-3">{{blog.title}}</h2>
+                    <p>
+                        {{blog.desc}}
+                    </p>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+{% include "includes/footer.html" %}
