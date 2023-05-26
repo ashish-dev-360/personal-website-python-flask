@@ -2,10 +2,11 @@ from flask import Flask, render_template, abort, request, redirect, send_from_di
 from data import DATA
 from datetime import datetime
 from smtplib import SMTP
+import os
 
 
-SMTPUSER = 'your gmail id'
-SMTPPASS = 'your gmail password'
+SMTPUSER = os.getenv('SMTPUSER')
+SMTPPASS = os.getenv('SMTPPASS')
 SMTPHOST = 'smtp.gmail.com'
 
 app = Flask(__name__)
