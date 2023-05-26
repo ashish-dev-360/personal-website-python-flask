@@ -13,4 +13,4 @@ RUN pip install -r requirements.txt
 # Define the entry point for the container
 CMD ["python", "main.py"]
 
-EXPOSE 443
+EXPOSE 80
