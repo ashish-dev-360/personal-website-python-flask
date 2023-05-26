@@ -13,4 +13,4 @@ RUN pip install -r requirements.txt
 # Define the entry point for the container
 CMD ["flask", "run", "--host=0.0.0.0"]
 
-EXPOSE 8000
+EXPOSE 80
