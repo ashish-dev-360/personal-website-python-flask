@@ -11,6 +11,6 @@ COPY . /
 RUN pip install -r requirements.txt
 
 # Define the entry point for the container
-CMD ["python", "main.py"]
+CMD ["waitress-serve", "main:app"]
 
-EXPOSE 80
+EXPOSE 8080

@@ -3,6 +3,7 @@ from data import DATA
 from datetime import datetime
 from smtplib import SMTP
 
+
 SMTPUSER = 'your gmail id'
 SMTPPASS = 'your gmail password'
 SMTPHOST = 'smtp.gmail.com'
